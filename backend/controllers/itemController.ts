@@ -27,7 +27,7 @@ export const createItem = (
 			id: randomUUID(),
 		};
 		items.push(item);
-		view.successItem(res, item);
+		view.created(res, item);
 		return;
 	} catch (err) {
 		next(err);
@@ -35,14 +35,14 @@ export const createItem = (
 };
 
 export const getItems = (
-    req: Request,
-    res: Response,
-    next: NextFunction
+	req: Request,
+	res: Response,
+	next: NextFunction
 ): void => {
-    try {
-        view.successItems(res, items);
-        return;
-    } catch (err) {
-        next(err);
-    }
+	try {
+		view.successItems(res, items);
+		return;
+	} catch (err) {
+		next(err);
+	}
 };

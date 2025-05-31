@@ -4,7 +4,6 @@ import { exception } from "./middleware/exception";
 import { env } from "./config/env";
 import cors from "cors";
 
-
 // require dotenv
 require(`dotenv`).config();
 
