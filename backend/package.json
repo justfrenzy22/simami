@@ -1,13 +1,14 @@
 {
   "name": "backend",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Simple In-Memory API for managing items",
   "license": "ISC",
   "author": "Petar Yankov",
   "type": "commonjs",
   "main": "server.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node server.ts"
   },
   "devDependencies": {
     "@types/cors": "^2.8.18",
